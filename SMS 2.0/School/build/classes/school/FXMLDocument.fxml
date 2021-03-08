@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="641.0" style="-fx-background-color: #3d34eb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.FXMLDocumentController">
+   <children>
+      <Pane layoutX="307.0" prefHeight="502.0" prefWidth="334.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="un" layoutX="85.0" layoutY="201.0" prefHeight="43.0" prefWidth="222.0" promptText="UserName" style="-fx-background-color: transparent; -fx-border-color: #3d34eb; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pw" layoutX="85.0" layoutY="266.0" prefHeight="43.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #3d34eb; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView fill="#3d34eb" glyphName="USER" layoutX="36.0" layoutY="231.0" size="25.0" />
+            <FontAwesomeIconView fill="#3d34eb" glyphName="KEY" layoutX="33.0" layoutY="295.0" size="25.0" />
+            <Button fx:id="button" layoutX="50.0" layoutY="383.0" mnemonicParsing="false" onAction="#log" prefHeight="43.0" prefWidth="254.0" style="-fx-background-color: #3d34eb #3d34eb; -fx-font-weight: bold;" text="Login" textFill="WHITE" />
+            <Text fill="#3d34eb" layoutX="82.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" wrappingWidth="165.8720703125">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#3d34eb" glyphName="USERS" layoutX="141.0" layoutY="96.0" size="55.0" />
+            <Button fx:id="close" layoutX="291.0" layoutY="14.0" mnemonicParsing="false" onAction="#Close" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="#da0101" glyphName="CLOSE" size="25" wrappingWidth="16.0" />
+               </graphic>
+            </Button>
+         </children></Pane>
+      <Text layoutX="56.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5113636363636364" centerY="0.5097087378640777" proportional="false" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <FontAwesomeIconView fill="WHITE" glyphName="INSTITUTION" layoutX="87.0" layoutY="320.0" size="120" />
+      <Text fill="WHITE" layoutX="30.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School Mannagement System">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

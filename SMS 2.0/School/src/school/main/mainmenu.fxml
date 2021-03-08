@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="651.0" style="-fx-background-color: #0066ff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="school.main.MainmenuController">
+   <children>
+      <Text fill="#99ebff" layoutX="281.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="54.0" />
+         </font>
+      </Text>
+      <Button fx:id="student" layoutX="35.0" layoutY="135.0" mnemonicParsing="false" onAction="#Student" prefHeight="188.0" prefWidth="263.0" style="-fx-background-color: #0066ff; -fx-border-color: #99ebff; -fx-border-width: 3px;">
+         <graphic>
+            <ImageView fitHeight="125.0" fitWidth="126.0">
+               <image>
+                  <Image url="@pics/student.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="build" layoutX="359.0" layoutY="359.0" mnemonicParsing="false" prefHeight="188.0" prefWidth="263.0" style="-fx-background-color: #0066ff; -fx-border-color: #99ebff; -fx-border-width: 3px;">
+         <graphic>
+            <ImageView fitHeight="125.0" fitWidth="116.0">
+               <image>
+                  <Image url="@pics/build.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="scholar" layoutX="35.0" layoutY="359.0" mnemonicParsing="false" onAction="#Scolar" prefHeight="188.0" prefWidth="263.0" style="-fx-background-color: #0066ff; -fx-border-color: #99ebff; -fx-border-width: 3px;">
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="116.0">
+               <image>
+                  <Image url="@pics/schoar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="teacher" layoutX="359.0" layoutY="135.0" mnemonicParsing="false" onAction="#Teacher" prefHeight="188.0" prefWidth="263.0" style="-fx-background-color: #0066ff; -fx-border-color: #99ebff; -fx-border-width: 3px;">
+         <graphic>
+            <ImageView fitHeight="142.0" fitWidth="136.0">
+               <image>
+                  <Image url="@pics/teacher.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="73.0" fitWidth="91.0" layoutX="167.0" layoutY="24.0">
+         <image>
+            <Image url="@pics/menu.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="58.0" style="-fx-background-color: #0066ff;">
+         <graphic>
+            <ImageView fx:id="about" fitHeight="56.0" fitWidth="55.0">
+               <image>
+                  <Image url="@pics/about.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="out" layoutX="554.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="66.0" prefWidth="68.0" style="-fx-background-color: #0066ff;">
+         <graphic>
+            <ImageView fx:id="logout" fitHeight="54.0" fitWidth="57.0">
+               <image>
+                  <Image url="@pics/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

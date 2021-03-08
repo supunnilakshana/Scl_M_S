@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="691.0" style="-fx-background-color: #0066ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.menu.TeachController">
+   <children>
+      <Button fx:id="regi" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" onAction="#enter" prefHeight="169.0" prefWidth="315.0" style="-fx-background-color: #0040ff; -fx-border-width: 3px; -fx-border-color: black;">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@pics/addt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="276.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="54.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="84.0" fitWidth="85.0" layoutX="156.0" layoutY="20.0">
+         <image>
+            <Image url="@pics/tea.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="edit" layoutX="359.0" layoutY="154.0" mnemonicParsing="false" onAction="#edit" prefHeight="169.0" prefWidth="315.0" style="-fx-background-color: #0040ff; -fx-border-width: 3px; -fx-border-color: black;">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="104.0" fitWidth="98.0">
+               <image>
+                  <Image url="@admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="105.0" layoutY="355.0" prefHeight="312.0" prefWidth="506.0" style="-fx-border-color: black; -fx-border-width: 2px;">
+         <children>
+            <Text layoutX="118.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers  Details">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="ALL" layoutX="109.0" layoutY="81.0" mnemonicParsing="false" onAction="#all" prefHeight="56.0" prefWidth="263.0" style="-fx-background-color: #0040ff; -fx-border-width: 3px; -fx-border-color: black;" text="ALL Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="IN" layoutX="109.0" layoutY="154.0" mnemonicParsing="false" onAction="#in" prefHeight="56.0" prefWidth="263.0" style="-fx-background-color: #0040ff; -fx-border-width: 3px; -fx-border-color: black;" text="Teachers of in school" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="OLD" layoutX="108.0" layoutY="225.0" mnemonicParsing="false" onAction="#out" prefHeight="56.0" prefWidth="263.0" style="-fx-background-color: #0040ff; -fx-border-width: 3px; -fx-border-color: black;" text="Transfered Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="56.0" prefWidth="70.0" style="-fx-background-color: #0066ff; -fx-background-radius: 20px;">
+         <graphic>
+            <FontAwesomeIconView fx:id="Back_i" glyphName="ARROW_CIRCLE_LEFT" size="45.0" wrappingWidth="38.285715103149414" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
